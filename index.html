@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <div class="header">
+    <div id="header" class="header">
       <div class="links">
         <ul>
           <li><a href="#">Landings</a></li>
@@ -21,10 +21,10 @@
           <h3>PROFI</h3>
           <div class="navigation">
             <nav>
-              <a href="#">Home</a>
-              <a href="#">About</a><a href="#">Services</a><a href="#">Testimonials</a>
+              <a href="#header">Home</a>
+              <a href="#about">About</a><a href="#services">Services</a><a href="#explore">Explore</a>
               <!-- <a href="#">FAQ</a> -->
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
               <!-- <ul> -->
                 <!-- <li></li>
                 <li></li>
@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>  
-    <div class="main-hero">
+    <div  class="main-hero">
       <div class="modal">
         <div class="modal-center">
           <h1>Landing Pages for Small Businesses</h1>
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
       <div class="about-section">
         <div class="about-profi">
           <div class="text-center">
@@ -60,47 +60,75 @@
           <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
           <button type="button">GET FREE CONSULTATION</button>
           </div>
-      </div>
-      <div class="container-img">
-        <div class="img">
-          <img src="/images/about1.jpg" alt="">
         </div>
-      </div>
+        <div class="container-img">
+          <div class="img">
+            <img src="/images/about1.jpg" alt="">
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="services">
+    <div id="services" class="services">
       <div class="services-center">
         <div class="services-text">
-          <h1>Services</h1>
+          <div class="center-services">
+            <h1>Services</h1>
           <h4>What we do the best</h4>
           <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+          <button type="button">LEARN MORE</button>
+          </div>
         </div>
+        <!-- <div>
+          custom landing pages
+          web design and development
+          web support and maintenance
+          graphic design
+          more
+        </div> -->
         <div class="slider">
           <!-- <div class="overflow"> -->
             <div class="slider-container">
               <div class="slider-img">
-                <img src="/images/background.jpg" alt="">
-                <img src="/images/about1.jpg" alt="">
-              <!-- </div>
-              <div class="slider-img"> -->
-                
-              <!-- </div>
-              <div class="slider-img"> -->
-                <img src="/images/bg.jpg" alt="">
+                <div class="content">
+                  <img src="/images/landings.svg" alt="">
+                  <h3>Custom Landing Pages</h3>
+                </div>
+                <div class="content">
+                  <img src="/images/design-dev.svg" alt="">
+                  <h3>Web Design and Development</h3>
+                </div>
+                <div class="content">
+                  <img src="/images/graphic-design.svg" alt="" id="graphic">
+                  <h3>Graphic Design</h3>
+                </div>
+                <div class="content">
+                  <img src="/images/maintain.svg" alt="">
+                  <h3>Web Support and Maintenace</h3>
+                </div>
+                <!-- <div class="content">
+                  <img src="/images/not-here.svg" alt="" id="not">
+                  <h3>Looking for something else? <br> <a href="#"><u>More Services..</u></a></h3>
+                </div> -->
               </div>
-              
-              
-            <!-- <img src="/images/about1.jpg" alt=""> -->
+                <!-- <div class="content">
+                  <h3>web design</h3>
+                </div>
+                <div class="content">
+                  <h3>software development</h3>
+                </div>
+                <div class="content">
+                  <h3>Landing pages</h3>
+                </div>
+              </div> -->
             <button type="button" class="btn btn-prev"><img src="/images/right.svg" alt="" class="prev"></button>
             <button type="button" class="btn btn-next"><img src="/images/right.svg" alt=""></button>
           </div>
-          <!-- </div> -->
         </div>
       </div>
     </div>
 
-    <div class="pages">
+    <div id="explore" class="pages">
       <div class="pages-center">
         <h5>CAREFULLY HANDCRAFTED LANDINGS FOR YOUR BUSINESS</h5>
         <h1>Explore landing pages</h1>
@@ -154,13 +182,72 @@
         </div>
       </div>
     </div>
-    <!-- <div class="bg"></div> -->
-    <div class="banner">
-      <div class="back-drop">
-        <h3>PROFI LANDING PAGES</h3>
-      <h1>Ready to get a new website?</h1>
-      <button class="modal-btn">BUY TEMPLATE</button>
+    <!-- <div class="contact">
+      <div class="contact-form">
+        <h5>We answer within 24 hours</h5>
+        <h1>Contact Us</h1>
+        <form action="/action_page.php">
+          <div class="form-split">
+            <div class="first-name">
+              <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    
+            </div>
+            <div class="last-name"><label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></div>
+          </div> 
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
       </div>
+    </div> -->
+    <div id="contact" class="banner">
+      <div class="back-drop">
+        <!-- <h3>PROFI LANDING PAGES</h3> -->
+      <h1>Ready to get a new website? Contact Us</h1>
+      <div class="contact">
+      <div class="contact-form">
+        <h3>We answer within 24 hours</h3>
+        
+        <form action="/action_page.php">
+          <div class="form-split">
+            <div class="first-name">
+              <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    
+            </div>
+            <div class="last-name"><label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></div>
+          </div> 
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+      </div>
+    </div>
+      <!-- <button class="modal-btn">BUY TEMPLATE</button>-->
+      </div> 
     </div>
     <div class="footer">
         <h2>PROFI</h3>

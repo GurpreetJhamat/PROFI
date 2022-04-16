@@ -2,7 +2,7 @@ const slider = document.querySelector(".slider-img");
 const prevBtn = document.querySelector('.btn-prev')
 const nextBtn = document.querySelector('.btn-next')
 
-const imgs = document.querySelectorAll(".slider-img img");
+const imgs = document.querySelectorAll(".slider-img .content");
 // console.log(img)
 
 let idx = 0;
