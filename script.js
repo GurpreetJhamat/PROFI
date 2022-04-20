@@ -1,7 +1,6 @@
 const slider = document.querySelector(".slider-img");
 const prevBtn = document.querySelector('.btn-prev')
 const nextBtn = document.querySelector('.btn-next')
-
 const imgs = document.querySelectorAll(".slider-img .content");
 // console.log(img)
 
@@ -25,4 +24,13 @@ prevBtn.addEventListener('click', () => {
     idx--
     changeImg()
     console.log(idx)
+})
+
+const toggleBtn = document.querySelector('.toggle');
+const navCollapse = document.querySelector('.nav-collapse');
+// nav - collapse;
+
+toggleBtn.addEventListener('click', () => {
+    navCollapse.classList.toggle("show-collapse");
+    console.log('hello')
 })

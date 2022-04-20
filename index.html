@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,29 +17,47 @@
           <li><a href="#">Booking Form</a></li>
         </ul>
       </div>
-      <div class="nav">
+      <div class="nav-main">
         <div class="nav-center">
           <h3>PROFI</h3>
           <div class="navigation">
-            <nav>
+            <nav class="hide-for-mobile">
               <a href="#header">Home</a>
-              <a href="#about">About</a><a href="#services">Services</a><a href="#explore">Explore</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#explore">Explore</a>
               <!-- <a href="#">FAQ</a> -->
               <a href="#contact">Contact</a>
-              <!-- <ul> -->
-                <!-- <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li> -->
-              <!-- </ul> -->
             </nav>
-            <button class="nav-btn">BUY TEMPLATE</button>
+            <button class="nav-btn hide-for-mobile">BUY TEMPLATE</button>
+
+            <a href="#" class="toggle hide-for-desktop">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
           </div>
         </div>
       </div>
+      <div class="nav-collapse">
+        <div class="nav-left">
+          <!-- <div class="nav-links"> -->
+            <nav>
+              <a href="#header">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#explore">Explore</a>
+              <!-- <a href="#">FAQ</a> -->
+              <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-btn">BUY TEMPLATE</button>
+          <!-- </div> -->
+        </div>
+      </div>
+
     </div>  
     <div  class="main-hero">
+      <div class="background"></div>
       <div class="modal">
         <div class="modal-center">
           <h1>Landing Pages for Small Businesses</h1>
@@ -252,8 +271,8 @@
     <div class="footer">
         <h2>PROFI</h3>
         <div>
-            <h4>PRIVACY POLICY</h4>
-            <h4>TERMS & CONDITIONS</h4>
+            <h6>PRIVACY POLICY</h6>
+            <h6>TERMS & CONDITIONS</h6>
         </div>
     </div>
     <script src="script.js"></script>
