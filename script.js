@@ -34,3 +34,18 @@ toggleBtn.addEventListener('click', () => {
     navCollapse.classList.toggle("show-collapse");
     console.log('hello')
 })
+
+
+const panels = document.querySelectorAll(".img");
+
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClass();
+    panel.classList.add("active");
+  });
+});
+function removeActiveClass() {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+}
