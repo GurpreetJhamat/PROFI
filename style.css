@@ -948,7 +948,7 @@ justify-content: center;
   display: flex;
 }
 
-.footer div h4 {
+.footer div h6 {
   padding: 10px;
 }
 
@@ -1058,7 +1058,7 @@ justify-content: center;
   }
 
   .footer div h6 {
-    padding-top: 10px;
+    padding-top:10px;
   }
 }
 
@@ -1132,7 +1132,7 @@ justify-content: center;
 }
 
 @media (min-width: 64em) {
-  .hide-for-desktop {
+  .nav-main a.toggle {
     display: none;
   }
   /* .modal-center{
